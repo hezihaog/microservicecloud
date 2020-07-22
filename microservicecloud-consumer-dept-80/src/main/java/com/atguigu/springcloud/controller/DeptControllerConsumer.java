@@ -51,4 +51,13 @@ public class DeptControllerConsumer {
         String url = REST_URL_PREFIX + "/dept/list";
         return restTemplate.getForObject(url, List.class);
     }
+
+    /**
+     * 测试服务发现
+     */
+    @RequestMapping(value = "/consumer/dept/discovery", method = RequestMethod.GET)
+    public Object discovery() {
+        String url = REST_URL_PREFIX + "/dept/discovery";
+        return restTemplate.getForObject(url, Object.class);
+    }
 }
