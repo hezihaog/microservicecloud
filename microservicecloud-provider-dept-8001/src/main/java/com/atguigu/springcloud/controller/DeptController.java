@@ -21,6 +21,9 @@ import java.util.List;
 public class DeptController {
     @Autowired
     private DeptService deptService;
+    /**
+     * 服务发现客户端
+     */
     @Autowired
     private DiscoveryClient client;
 
@@ -48,10 +51,15 @@ public class DeptController {
         return deptService.list();
     }
 
+    /**
+     * 测试，从注册中心获取服务列表，查询自己的服务
+     */
     @RequestMapping(value = "/discovery", method = RequestMethod.GET)
     public Object discovery() {
+        //获取服务列表
         List<String> list = client.getServices();
         System.out.println("*****************" + list);
+        //查询自己的服务，因为可能是集群，有多个实例，所以返回是一个列表
         List<ServiceInstance> srvList = client.getInstances("MICROSERVICECLOUD-DEPT");
         for (ServiceInstance element : srvList) {
             System.out.println(element.getServiceId() + "\t" + element.getHost() + "\t" + element.getPort() + "\t" + element.getUri());

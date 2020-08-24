@@ -19,6 +19,7 @@ import java.util.List;
  */
 @RestController
 public class DeptControllerConsumer {
+    //服务提供方的接口前缀，host部分写服务名即可，Ribbon会查询到服务列表后，按照策略选择一个服务，拿它的地址替换掉
     private static final String REST_URL_PREFIX = "http://MICROSERVICECLOUD-DEPT";
 
     @Autowired

@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <!-- 继承统一的父工程 -->
+    <!-- 统一父工程 -->
     <parent>
         <artifactId>microservicecloud</artifactId>
         <groupId>com.atguigu.springcloud</groupId>
@@ -12,6 +12,7 @@
 
     <!-- 当前Module的名字 -->
     <artifactId>microservicecloud-api</artifactId>
+    <description>公共API包</description>
 
     <!-- 声明子模块需要用的jar包，如果父工程已经有定义了，则不需要声明版本号 -->
     <dependencies>

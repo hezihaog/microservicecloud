@@ -2,6 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <!-- 统一父工程 -->
     <parent>
         <artifactId>microservicecloud</artifactId>
         <groupId>com.atguigu.springcloud</groupId>
@@ -10,6 +11,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>microservicecloud-consumer-dept-feign</artifactId>
+    <description>部门微服务消费者-Feign版</description>
 
     <dependencies>
         <!-- 引入通用api模块 -->
@@ -23,11 +25,12 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-feign</artifactId>
         </dependency>
-        <!-- Ribbon相关 -->
+        <!-- Eureka相关 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-eureka</artifactId>
         </dependency>
+        <!-- Ribbon相关 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-ribbon</artifactId>

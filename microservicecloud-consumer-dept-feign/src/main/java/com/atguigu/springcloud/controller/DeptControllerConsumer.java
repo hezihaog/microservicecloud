@@ -20,6 +20,9 @@ import java.util.List;
  */
 @RestController
 public class DeptControllerConsumer {
+    /**
+     * 注入Feign接口，声明式调用服务提供者
+     */
     @Autowired
     private DeptClientService service;
 

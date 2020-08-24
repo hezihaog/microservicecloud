@@ -10,7 +10,7 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
  * <p>
  * @date 2020/7/22 3:11 下午
  * <p>
- * Eureka Server端
+ * 使用配置中心改造后的，注册中心Eureka Server端
  */
 @SpringBootApplication
 //告诉SpringBoot，本文件为Eureka Server启动类

@@ -11,6 +11,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  * <p>
  * @date 2020/7/21 3:53 下午
  * <p>
+ * 使用配置中心改造后的，服务提供方Provider
  */
 @SpringBootApplication
 //表示当前为Eureka的客户端

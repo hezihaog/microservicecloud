@@ -15,7 +15,7 @@ import java.util.List;
  * @date 2020/7/23 8:42 上午
  * <p>
  */
-//注解@FeignClient，value为要访问的微服务的名称，fallbackFactory为服务熔断工厂
+//注解@FeignClient，value为要访问的微服务的名称，fallbackFactory为服务降级工厂
 @FeignClient(value = "MICROSERVICECLOUD-DEPT", fallbackFactory = DeptClientServiceFallbackFactory.class)
 public interface DeptClientService {
     /**

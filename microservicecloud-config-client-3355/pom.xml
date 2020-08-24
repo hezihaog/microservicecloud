@@ -2,6 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <!-- 统一父工程 -->
     <parent>
         <artifactId>microservicecloud</artifactId>
         <groupId>com.atguigu.springcloud</groupId>
@@ -10,6 +11,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>microservicecloud-config-client-3355</artifactId>
+    <description>配置中心改造的Consumer服务消费方</description>
 
     <dependencies>
         <!-- config配置中心 客户端 -->

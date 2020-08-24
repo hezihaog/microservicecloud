@@ -9,6 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * <p>
  * @date 2020/7/23 4:25 下午
  * <p>
+ * 使用配置中心改造后的，服务消费方Consumer
  */
 @SpringBootApplication
 public class ConfigClient3355StartSpringCloudApp {

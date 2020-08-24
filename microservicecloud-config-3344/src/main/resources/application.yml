@@ -8,5 +8,6 @@ spring:
     config:
       server:
         git:
-          # uri: git@github.com:hezihaog/microservicecloud-config.git #Github上面的git仓库地址
+          # Github中的配置文件仓库：https://github.com/hezihaog/microservicecloud-config.git
+          # 或者使用ssh，则 uri: git@github.com:hezihaog/microservicecloud-config.git #Github上面的git仓库地址
           uri: https://github.com/hezihaog/microservicecloud-config.git #Github上面的git仓库地址

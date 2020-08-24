@@ -13,7 +13,7 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
  * 网关
  */
 @SpringBootApplication
-//标识为Zuul网关
+//标识当前服务为Zuul网关
 @EnableZuulProxy
 public class Zuul9527StarSpringCloudApp {
     public static void main(String[] args) {

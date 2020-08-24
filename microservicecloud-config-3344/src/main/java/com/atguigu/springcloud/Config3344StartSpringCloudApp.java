@@ -10,6 +10,7 @@ import org.springframework.cloud.config.server.EnableConfigServer;
  * <p>
  * @date 2020/7/23 3:22 下午
  * <p>
+ * 配置中心
  */
 @SpringBootApplication
 //标识为Config配置中心
